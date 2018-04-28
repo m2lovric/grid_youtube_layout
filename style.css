@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: grid;
+    margin: 0 10% 0 10%;
+    background-color: aquamarine;
+    height: 100vh;
+    grid-template-columns: repeat(12,1fr);
+}
+
+section{
+    background-color: bisque;
+}
+
+aside{
+    background-color: blueviolet;
+}
