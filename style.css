@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #121212;
 }
 main{
     display: grid;
@@ -8,12 +9,39 @@ main{
     background-color: aquamarine;
     height: 100vh;
     grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+nav{
+    height: 55px;
+    width: 100%;
+    background-color: #232323;
+    position: absolute;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    width: 50%;
+    height: 30px;
 }
 
 section{
     background-color: bisque;
+    grid-column: 1/8;
+    grid-row: 1/4;
+}
+
+article{
+    background-color: brown;
+    grid-column: 1/8;
+    grid-row:4/-1; 
 }
 
 aside{
     background-color: blueviolet;
+    grid-column: 8/-1;
+    grid-row: 1/-1;
 }
