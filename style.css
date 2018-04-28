@@ -1,12 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #121212;
 }
 main{
+    padding-top: 55px;
     display: grid;
-    margin: 0 10% 0 10%;
-    background-color: aquamarine;
     height: 100vh;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -26,22 +24,40 @@ nav{
 #search{
     width: 50%;
     height: 30px;
+    background-color: #121212;
+    border: 1px solid #303030;
+    border-radius: 2px;
+    color: #6B6B6B;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
 section{
-    background-color: bisque;
-    grid-column: 1/8;
+    background-color: #121212;
+    grid-column: 1/9;
     grid-row: 1/4;
 }
 
+hr{
+    border: 1px solid #232323;
+    width: 640px;
+    margin-left: 10%;
+    bottom: 0;
+}
+
+#player{
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
 article{
-    background-color: brown;
-    grid-column: 1/8;
-    grid-row:4/-1; 
+    background-color: #121212;
+    grid-column: 1/9;
+    grid-row: 4/-1; 
 }
 
 aside{
     background-color: blueviolet;
-    grid-column: 8/-1;
+    grid-column: 9/-1;
     grid-row: 1/-1;
 }
